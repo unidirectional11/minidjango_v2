@@ -12,3 +12,7 @@ class Portal(models.Model):
 
     def __str__(self):
         return str(self.id) + " portal - " + self.name
+
+class Person(models.Model):
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
